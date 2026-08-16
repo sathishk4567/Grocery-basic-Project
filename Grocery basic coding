@@ -1,1 +1,74 @@
+print("--------------------------------------------------------------")
+print ("Chat GPT Malligai kadai")
+print("----------------------------------------------------------------")
+print("No 5, ChatGPT Road, Chatgpt oor, Chatgpt - 600094")
+print("----------------------------------------------------------------")
+cusname=input("Enter the customer name")
+#itemcric=(int(input("enter the product value")))
+
+
+#Getting inputr values explicitly
+#rr=(int(input("Enter the quantity of rice in KG")))
+#sr=(int(input("Enter the quantity of sugar in KG")))
+#oilr=(int(input("Enter the quantity of oil bought in Litres")))
+#mr=(int(input("Enter the quantity of milk in Litres")))
+itemcric=0
+Grandtotal=0
+
+print("---------------------------------------------------------------")
+
+# to repeat the items on the list we are going into loop
+while itemcric != 9999:
+    itemcric = (int(input("Enter item code: ")))
+#if to check the code value
+    if itemcric ==1001:
+        rr=(int(input("Enter the quantity of rice in KG")))
+        arr=(rr*60)
+        Grandtotal=Grandtotal+arr
+        print("Rice", arr)
+
+    elif  itemcric == 1002:
+        sr=(int(input("Enter the quantity of sugar in KG")))
+        srr=(sr*50)
+        Grandtotal=Grandtotal+srr
+        print ("Sugar", srr)
+
+    elif itemcric ==1003:
+        oilr=(int(input("Enter the quantity of oil bought in Litres")))
+        orr=(oilr*150)
+        Grandtotal=Grandtotal+orr
+        print ("oil" , orr)
+
+    elif  itemcric ==1004:
+            mr=(int(input("Enter the quantity of Milk bought in Litres")))
+            mrr=(mr*30)
+            Grandtotal=Grandtotal+mrr
+            print ("Milk", mrr)
+    else:
+        print ("Finish Visit Again")   
+
+if Grandtotal >= 500:
+    discount = Grandtotal * 10 / 100
+else:
+    discount = 0
+finalbill = Grandtotal - discount
+
+key=(int(input("Do you want to print Yes or No Yes for 1 and No for 2")))
+
+if key==1:
+    print("Lets start print")
+    print ("Chat GPT Malligai kadai")
+    print("----------------------------------------------------------------")
+    print("No 5, ChatGPT Road, Chatgpt oor, Chatgpt - 600094")
+    print("----------------------------------------------------------------")
+    print("customer name", cusname)
+    finalbill = Grandtotal - discount
+    print("Grand Total:", Grandtotal)
+    print("Discount:", discount)
+    print("Final Bill:", finalbill)
+else:
+    print("Go Green")
+    print("No Bill")
+
+
 
